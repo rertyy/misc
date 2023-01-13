@@ -2,19 +2,16 @@ import java.util.*;
 
 public class lastfactorialdigit {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine(); //reads the next line the user inputs and assign it to String input
-        boolean flag;
-        flag = false;
-        int num = Integer.parseInt(input);
-        if (flag == false) {
-            flag = true;
-        } else {
-            switch (num) {
+        // int lmao = 5;
+        Scanner sc = new Scanner (System.in);
+        int numberOfResults = sc.nextInt();
+        for (int i = 0; i < numberOfResults; i++) {
+            int toCompute = sc.nextInt();
+            switch (toCompute) {
                 case 1:
                 case 2:
                 case 4:
-                    System.out.println(num);
+                    System.out.println(toCompute);
                     break;
                 case 3:
                     System.out.println(6);
@@ -23,6 +20,7 @@ public class lastfactorialdigit {
                     System.out.println(0);
             }
         }
-        sc.close(); //impt to close scanner afterwards!
+        
+        sc.close();
     }
 }

@@ -1,4 +1,9 @@
 public class Animal {
+
+    public void makeNoise(){
+        System.out.println("noisemaker");
+    }
+
     public static void main(String []args) {
         // Dog dogOne = new Dog("rex", 20); //errors out because constructors are not inherited. 
                                             // If a constructor is not defined, an implicit constructor "Dog() {}" is created, which is not parameterised
